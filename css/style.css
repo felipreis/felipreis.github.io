@@ -1,0 +1,42 @@
+body{
+    background-color: black;
+    color:white;
+    display: flex;
+}
+
+#foto_perfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+}
+
+
+.profile{
+    text-align: center;
+    height: 600px;
+    padding: 50px;
+    border-right: solid 3px purple;
+}
+
+.container{
+    padding: 50px;
+}
+
+.description {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    border-bottom: solid 3px purple;
+}
+
+button{
+    width: 120px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+}
