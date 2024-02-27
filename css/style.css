@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 body{
     background-color: black;
     color:white;
     display: flex;
+    font-family: Montserrat;
 }
 
 #foto_perfil {
@@ -16,6 +20,10 @@ body{
     height: 600px;
     padding: 50px;
     border-right: solid 3px purple;
+}
+
+.welcome{
+    font-size: 20px;
 }
 
 .container{
