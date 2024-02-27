@@ -40,3 +40,29 @@ button{
     border-radius: 10px;
     margin-top: 20px;
 }
+
+#skills_logo{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.imagens_skills{
+    display: flex;
+    align-items: center;
+}
+
+.github{
+    margin: 0 auto;
+}
+
+.background_github{
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+}
