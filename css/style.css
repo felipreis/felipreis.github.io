@@ -37,8 +37,9 @@ body{
 }
 
 #logo_email{
-    width:30px;
-    height:30px
+    width:15px;
+    height:15px;
+    margin:auto 0;
 }
 
 .projetos:hover {
