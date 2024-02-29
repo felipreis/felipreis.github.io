@@ -22,19 +22,30 @@ body{
     border-right: solid 3px purple;
 }
 
-<<<<<<< HEAD
+#social_media{
+    width: 100px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#email_box{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+#logo_email{
+    width:30px;
+    height:30px
+}
+
 .projetos:hover {
     border: solid 3px purple;
     color:purple;
     font-weight: bolder;
     background-color: black;
-=======
-#social_media{
-    width: 100px;
-    margin:0 auto;
-    display: flex;
-    justify-content: space-between
->>>>>>> master
 }
 
 .welcome{
