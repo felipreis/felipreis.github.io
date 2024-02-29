@@ -34,11 +34,12 @@ body{
     display: flex;
     justify-content: space-between;
     font-size: 12px;
+    margin-top: 15px;
 }
 
 #logo_email{
-    width:15px;
-    height:15px;
+    width:20px;
+    height:20px;
     margin:auto 0;
 }
 
