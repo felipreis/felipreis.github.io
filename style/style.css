@@ -8,7 +8,7 @@
 }
 
 body{
-    background-color: #606873;
+    background-color: #2E2E2E;
     font-family: "Julius Sans One", sans-serif;
     color: #FFFFFF;
 }
@@ -20,10 +20,13 @@ main{
 }
 
 .menu-bar{
-    background-color: #0C1C33;
+    background-color: #000000;
     height: 4rem;
     display: flex;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    top:0;
 }
 
 .menu-item-container{
@@ -35,7 +38,7 @@ main{
 
 nav{
     max-width: 1120px;
-    background-color:#0C1C33;
+    background-color:#000000;
     margin: 4rem;
     
 }
@@ -54,7 +57,7 @@ nav{
 
 
 .about-me{
-    max-width: 1120px;
+    max-width: 1200px;
     height: 60vh;
     display: flex;
     flex-direction: row;
@@ -63,6 +66,7 @@ nav{
 
     padding:0rem 0rem;
     margin: auto;
+    
 }
 
 .aboutme-text{
@@ -72,10 +76,32 @@ nav{
 }
 
 .title-container{
-    margin-left: 9rem;
+    margin-left: 6rem;
     margin-top: 2rem;
     font-size: 3rem;
     font-weight: 400;
+    margin-top: 6rem;
+}
+
+.resume-download{
+width: 25%;
+height: 2rem;
+background-color: #D9D9D9;
+
+font-size: 1.5rem;
+font-family: "Julius Sans One", sans-serif;;
+font-weight: 800;
+
+border-radius: 1rem;
+border: none;
+
+cursor: pointer;
+}
+
+.resume-download:hover{
+    background-color: #2E2E2E;
+    color: #FFFFFF;
+    border: #FFFFFF solid 1px;
 }
 
 h3{
@@ -83,8 +109,8 @@ h3{
 }
 
 .title{
-    font-size: 2rem;
-    font-weight: 500;
+    font-size: 3rem;
+    font-weight: 600;
 }
 
 .graduation{
@@ -101,35 +127,46 @@ h3{
     display: flex;
     flex-direction: column;
 
-    max-width: 1120px;
-    height: 80vh;
+    max-width: 100%;
+
     gap:4rem;
 
     padding:0rem 0rem;
     margin: auto;
+
+    background-color: #000000;
+
+
 }
 
 .projects-container{
-    max-width: 100%;
     display: flex;
     flex-direction: row;
-    gap:1rem;
+    justify-content: space-between;
+    gap:0rem;
+
+    background-color: #000000;
+    margin: 0 8rem;
+    margin-bottom: 3rem;
 }
 
 .projects-div{
-    padding: 2rem 2rem;
-    border: #0C1C33 solid 2px;
-    border-radius: 3rem;
+    border-radius: 1rem;
 
+    max-width: 25%;
     display: flex;
     flex-direction: column;
     gap:1rem;
+
+    background-color: #2E2E2E;
 }
 
 .project-img{
     width: 100%;  
     height: 100%; 
     object-fit: cover;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
 }
 
 .img-container{
@@ -145,4 +182,56 @@ h3{
     display: flex;
     flex-direction: row;
     gap:1rem;   
+}
+
+.project-title{
+    font-size: 1.5rem;
+    padding: 0rem 0.5rem ;
+}
+
+.project-description{
+    font-size: 15px;
+    padding: 0rem 1rem;
+}
+
+.img-project-skills{
+    list-style: none;
+    padding: 0rem 1rem;
+    padding-bottom: 1rem;
+}
+
+.head-project{
+    display: flex;
+    align-items: center;
+    padding: 0rem 1rem;
+    
+}
+
+.head-project:hover .appointer{
+    border: #FFFFFF solid 3px;
+    width: 1rem;
+}
+
+.head-project:hover .project-title{
+   font-weight: 600;
+}
+
+.appointer{
+    border: #FFFFFF solid 2px;
+    border-radius: 3px;
+    width: 3px;
+    transition: width 0.2s ease;
+}
+
+
+.project-skills{
+    display: inline-block;
+    background-color: #4e4e4e;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.project-skills:hover{
+    background-color: #6d6d6d;
 }
