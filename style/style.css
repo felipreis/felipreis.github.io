@@ -13,6 +13,12 @@ body{
     color: #FFFFFF;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    gap:40px
+}
+
 .menu-bar{
     background-color: #0C1C33;
     height: 4rem;
@@ -20,7 +26,7 @@ body{
     align-items: center;
 }
 
-ul{
+.menu-item-container{
     display:flex;
     align-items: center;
     gap:2rem;
@@ -34,13 +40,59 @@ nav{
     
 }
 
-li{
+.menu-item{
     cursor: pointer;
     font-weight:700;
 }
 
-li:hover{
+.menu-item:hover{
     border-bottom: solid 1px #FFFFFF;
     padding-top: 3px;
     font-weight: bold;
+}
+
+
+
+.about-me{
+    max-width: 1120px;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 4rem;
+
+    padding:0rem 0rem;
+    margin: auto;
+}
+
+.aboutme-text{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.title-container{
+    margin-left: 9rem;
+    margin-top: 2rem;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+h3{
+    font-weight: 500;
+}
+
+.title{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.graduation{
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.img-profile{
+    border: #FFFFFF solid 3px;
+    border-radius: 10rem;
 }
