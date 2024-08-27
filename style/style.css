@@ -105,6 +105,7 @@ transition: width 1s ease;
     border: #FFFFFF solid 1px;
 }
 
+
 h3{
     font-weight: 500;
 }
@@ -165,7 +166,7 @@ h3{
 }
 
 .projects-div:hover{
-    box-shadow:  0 0 15px  #7a7a7a;
+    box-shadow:  0 0 10px  #7a7a7a;
 }
 
 .projects-div:hover .appointer{
