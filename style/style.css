@@ -161,6 +161,11 @@ h3{
 
     background-color: #2E2E2E;
     cursor:pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.projects-div:hover{
+    box-shadow:  0 0 15px  #7a7a7a;
 }
 
 .projects-div:hover .appointer{
