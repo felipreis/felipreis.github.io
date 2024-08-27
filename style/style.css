@@ -398,5 +398,18 @@ footer{
     flex-direction: row;
     gap:0.5rem;
     align-items: center;
-
 }
+
+.social-medias{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.social-media-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    cursor: pointer;
+}
+
