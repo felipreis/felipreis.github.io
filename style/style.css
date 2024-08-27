@@ -122,6 +122,16 @@ h3{
 .img-profile{
     border: #FFFFFF solid 3px;
     border-radius: 10rem;
+    animation: oscilacao 3s ease-in-out infinite;
+}
+
+@keyframes oscilacao {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(30px); 
+    }
 }
 
 .projects{
@@ -165,7 +175,7 @@ h3{
 }
 
 .projects-div:hover{
-    box-shadow:  0 0 10px  #7a7a7a;
+    box-shadow:  0 0 10px  #c4c2c2;
 }
 
 .projects-div:hover .appointer{
@@ -351,4 +361,8 @@ h3{
 
 .certifications-img{
     height: 100%;
+}
+
+.github{
+    background-color: #000000;
 }
