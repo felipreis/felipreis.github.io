@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Felipe Reis</title>
     <link rel="stylesheet" href = "style/style.css" >
-    <script src="./script/script.js" defer></script>
+    <script src="./script/scrpit.js" defer></script>
 </head>
 <body>
 
-    <header class = "menu-bar">
+    <header id = "top-sobremim" class = "menu-bar">
         <nav >
             <ul class = "menu-item-container">
-                <li class = "menu-item">sobre mim</li>
-                <li class = "menu-item">projetos</li>
-                <li class = "menu-item">tecnologias</li>
-                <li class = "menu-item">contato</li>
+                <li id = "btnsobremim" class = "menu-item">sobre mim</li>
+                <li id = "btnprojetos" class = "menu-item">projetos</li>
+                <li id = "btntecnologias" class = "menu-item">tecnologias</li>
+                <li id = "btncertificados" class = "menu-item">certificados</li>
+                <li id = "btncontato" class = "menu-item">contato</li>
             </ul>
         </nav>
     </header>
@@ -46,8 +47,8 @@
             </header>
         </section>
 
-        <section class = "projects">
-            <h2 class = "title-container">projetos</h2>
+        <section id = "top-projects" class = "projects">
+            <h2  class = "title-container">projetos</h2>
             <section class = "projects-container">
                 <article class = "projects-div" onclick="window.open('https://github.com/felipreis/MyCar', '_blank');">
                     <img class ="project-img" src = "img/Projetos/my car.jpeg" alt ="my car">
@@ -91,10 +92,10 @@
             </section>
         </section>
 
-        <section class = "skills">
+        <section id = "top-tecnologias" class = "skills">
             <div>
                 <h2 class = "title-container">tecnologias</h2>
-                <div class = "skills-logo">
+                <div id = "top-certificados" class = "skills-logo">
                     <div class = "icon-container">
                         <img class = "img-tec" src = "https://icongr.am/devicon/java-plain.svg?size=148&color=currentColor" alt="java logo">
                         <div class="caption">Java</div>
@@ -135,7 +136,7 @@
                 </div>
             </div>
             <div>
-                <h2 class = "title-container">certificados</h2>
+                <h2  class = "title-container">certificados</h2>
                 <section class = "certifications-div">
                     <article class = "certifications" onclick="window.open('https://www.dio.me/certificate/I0EX8YDG/share', '_blank');">
                         <img class = "certifications-img" src = "img/certificados/backend java-santander bootcamp.webp" alt = "bootcamp santander">
@@ -182,8 +183,8 @@
 
         
     </main>
-    <footer>
-        <h2 class = "title-container contact-title"> Contato</h2>
+    <footer id = "top-contato">
+        <h2  class = "title-container contact-title"> Contato</h2>
         <section class = "contact">
             <div class = "contac-informations">
                 <a href="mailto:felipreisdaniel@gmail.com">
