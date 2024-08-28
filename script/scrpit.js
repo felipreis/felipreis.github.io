@@ -41,3 +41,14 @@ certificados.addEventListener("click", function(){
         behavior:"smooth"
     })
 })
+
+const btnDownload = document.querySelector(".resume-download");
+const imgDownload = document.querySelector(".resume-download-img")
+
+btnDownload.addEventListener("mouseover",() =>{
+        imgDownload.src = 'https://icongr.am/clarity/download.svg?size=25&color=ffffff';
+})
+
+btnDownload.addEventListener("mouseout", () => {
+    imgDownload.src = 'https://icongr.am/clarity/download.svg?size=25&color=currentColor'; 
+});
