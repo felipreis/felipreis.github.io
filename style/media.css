@@ -76,4 +76,8 @@
         padding-bottom: 10rem;
     }
 
+    a{
+        color: inherit;
+        text-decoration: none;
+    }
 }
