@@ -1,0 +1,79 @@
+@media screen and (max-width: 720px){
+
+    nav{
+        display: none;
+    }
+
+    /*sobre mim*/
+
+    .title-container{
+        display: block;
+        margin: 6rem auto;
+        margin-bottom: 0.5rem;
+    }
+
+    .about-me{
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .oscilar{
+        margin: 0 auto;
+    }
+
+    .aboutme-text{
+        padding-left: 1rem;
+    }
+
+    .resume-download{
+        width:40%;
+    }
+
+    .projects-container{
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+        gap:2rem;
+        padding-bottom: 3rem;
+    }
+
+    .projects-div{
+        max-width:80%;
+    }
+
+    .container-tecnologias{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+
+    .skills{
+        align-items: center;
+    }
+
+    .skills-logo{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .certifications-div{
+        flex-direction: column;
+    }
+
+    .certifications{
+        width: 40%;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .contact{
+        flex-direction: column;
+        padding-bottom: 10rem;
+    }
+
+}
