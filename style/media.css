@@ -1,12 +1,26 @@
 @media screen and (max-width: 720px){
 
     nav{
-        display: none;
+        margin: 0;
     }
 
     body {
         overflow-x: hidden;
     }
+
+    .menu-bar{
+        display: flex;
+       justify-content: center;
+    }
+
+    #btnsobremim{
+        display: none;
+    }
+    
+    #btncertificados{
+        display: none;
+    }
+
 
     /*sobre mim*/
 
