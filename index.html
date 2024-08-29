@@ -6,6 +6,10 @@
     <title>Felipe Reis</title>
     <link rel="stylesheet" href = "style/style.css" >
     <link rel="stylesheet" href = "style/media.css" >
+    <!--swipper-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+
     <script src="./script/scrpit.js" defer></script>
 </head>
 <body>
@@ -34,7 +38,7 @@
                     <h2 class = "title">Felipe Reis</h2>
                 </div>
 
-                <p> <b>estudante de Análise e Desenvolvimento de Sistemas</b> no segundo semestre, com uma formação diversificada, incluindo experiência como cadete de cavalaria na AMAN. Tenho um gosto por música, skate, corrida, leitura, artes e ciências exatas, e busco unir criatividade e rigor técnico em meu trabalho. Comunicativo e colaborativo, estou sempre em busca de novas oportunidades para aplicar e expandir meus conhecimentos na tecnologia. </p>
+                <p class = "txt-aboutme"> <b>estudante de Análise e Desenvolvimento de Sistemas</b> no segundo semestre, com uma formação diversificada, incluindo experiência como cadete de cavalaria na AMAN. Tenho um gosto por música, skate, corrida, leitura, artes e ciências exatas, e busco unir criatividade e rigor técnico em meu trabalho. Comunicativo e colaborativo, estou sempre em busca de novas oportunidades para aplicar e expandir meus conhecimentos na tecnologia. </p>
                 <h3>formação</h3>
                 <ul>
                     <li class = "graduation">Análise e Desenvolvimento de Sistemas - Faculdade Serra Dourada</li>
@@ -139,36 +143,52 @@
             </div>
             <div class = "container-tecnologias">
                 <h2  class = "title-container">certificados</h2>
-                <section class = "certifications-div">
-                    <article class = "certifications" onclick="window.open('https://www.dio.me/certificate/I0EX8YDG/share', '_blank');">
-                        <img class = "certifications-img" src = "img/certificados/backend java-santander bootcamp.webp" alt = "bootcamp santander">
-                        <div class = "head-project">
-                            <hr class = "appointer">
-                            <h3 id = "certification-name" class = "project-title">santander java backend </h3>
-                        </div>
-                    </article>
-                    <article class = "certifications" onclick="window.open('https://www.dio.me/certificate/VM2PBSEU/share', '_blank');">
-                        <img class = "certifications-img" src="./img/certificados/bootcamp java-ia.webp" alt="java ia">
-                        <div class = "head-project">
-                            <hr class = "appointer">
-                            <h3 id = "certification-name" class = "project-title">desenvolvimento java com ia </h3>
-                        </div>
-                    </article>
-                    <article class = "certifications" onclick="window.open('https://www.dio.me/certificate/NCHFKAPQ/share', '_blank');">
-                        <img class = "certifications-img" src="./img/certificados/javadeveloper.webp" alt="java ia">
-                        <div class = "head-project">
-                            <hr class = "appointer">
-                            <h3 id = "certification-name" class = "project-title">formação java developer</h3>
-                        </div>
-                    </article>
-                    <article class = "certifications" onclick="window.open('https://appmlearn.s3.amazonaws.com/production/users/certificates/65a7d6f7b7a7c8b0dc087f88/git-e-github-do-basico-ao-avancado-felipe-reis-daniel-65db95e9270d6869e20fc708.jpg', '_blank');">
-                        <img class = "certifications-img" src="https://media.licdn.com/dms/image/D4D2DAQFqbxObQ6ss3Q/profile-treasury-document-images_480/1/1708889863789?e=1725494400&v=beta&t=BAYIxGl_DJJh7iuyIRWIhTdC14TM2oMwikKrbhmUYRE" alt="java ia">
-                        <div class = "head-project">
-                            <hr class = "appointer">
-                            <h3 id = "certification-name" class = "project-title">git e github básico ao avançado</h3>
-                        </div>
-                    </article>
-                </section>
+                <!--div swipper-->
+                <div class = "container swiper">
+                    <!--div swipper-->
+                    <div class = "slider-wrapper">
+                        <section class = "certifications-div swiper-wrapper">
+                            <article class = "certifications swiper-slide" onclick="window.open('https://www.dio.me/certificate/I0EX8YDG/share', '_blank');">
+                                <img class = "certifications-img" src = "img/certificados/backend java-santander bootcamp.webp" alt = "bootcamp santander">
+                                <div class = "head-project">
+                                    <hr class = "appointer">
+                                    <h3 id = "certification-name" class = "project-title">santander java backend </h3>
+                                </div>
+                            </article>
+
+                            <article class = "certifications swiper-slide" onclick="window.open('https://www.dio.me/certificate/VM2PBSEU/share', '_blank');">
+                                <img class = "certifications-img" src="./img/certificados/bootcamp java-ia.webp" alt="java ia">
+                                <div class = "head-project">
+                                    <hr class = "appointer">
+                                    <h3 id = "certification-name" class = "project-title">desenvolvimento java com ia </h3>
+                                </div>
+                            </article>
+
+                            <article class = "certifications swiper-slide" onclick="window.open('https://www.dio.me/certificate/NCHFKAPQ/share', '_blank');">
+                                <img class = "certifications-img" src="./img/certificados/javadeveloper.webp" alt="java ia">
+                                <div class = "head-project">
+                                    <hr class = "appointer">
+                                    <h3 id = "certification-name" class = "project-title">formação java developer</h3>
+                                </div>
+                            </article>
+
+                            <article class = "certifications swiper-slide" onclick="window.open('https://appmlearn.s3.amazonaws.com/production/users/certificates/65a7d6f7b7a7c8b0dc087f88/git-e-github-do-basico-ao-avancado-felipe-reis-daniel-65db95e9270d6869e20fc708.jpg', '_blank');">
+                                <img class = "certifications-img" src="https://media.licdn.com/dms/image/D4D2DAQFqbxObQ6ss3Q/profile-treasury-document-images_480/1/1708889863789?e=1725494400&v=beta&t=BAYIxGl_DJJh7iuyIRWIhTdC14TM2oMwikKrbhmUYRE" alt="java ia">
+                                <div class = "head-project">
+                                    <hr class = "appointer">
+                                    <h3 id = "certification-name" class = "project-title">git e github básico ao avançado</h3>
+                                </div>
+                            </article>
+                        </section>
+
+                        <div class="swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        
+                    </div>
+                </div>
             </div>
 
         </section>
@@ -218,3 +238,4 @@
     </footer>
 </body>
 </html>
+

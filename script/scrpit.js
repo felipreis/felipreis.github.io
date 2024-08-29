@@ -52,3 +52,37 @@ btnDownload.addEventListener("mouseover",() =>{
 btnDownload.addEventListener("mouseout", () => {
     imgDownload.src = 'https://icongr.am/clarity/download.svg?size=25&color=currentColor'; 
 });
+
+
+
+const swiper = new Swiper('.slider-wrapper', {
+    direction: 'horizontal',
+    loop: true,
+    grabCursor:true,
+    spaceBetween:40,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      dynamicBullets:true
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    breakpoints: {
+        0: {
+            slidesPerView:1
+        },
+        720: {
+            slidesPerView:2
+        },
+        1024: {
+            slidesPerView:3
+        }
+    }
+  });
