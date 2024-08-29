@@ -96,6 +96,33 @@ nav{
     gap: 2rem;
 }
 
+#typing{
+    display: inline-block;
+    letter-spacing: 4px;
+    font-weight: 400;
+
+    animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid;
+}
+
+@keyframes typing {
+    from{
+        width: 0;
+    }
+    to {
+        width:30%; /* Defina o valor final de acordo com o tamanho do texto */
+    }
+}
+
+@keyframes blink {
+    50%{
+        border-color:transparent;
+    }
+    
+}
+
 .title-container{
     margin-left: 6rem;
     margin-top: 2rem;
@@ -103,6 +130,8 @@ nav{
     font-weight: 400;
     margin-top: 6rem;
 }
+
+
 
 .resume-download{
 width: 25%;
