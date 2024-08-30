@@ -266,7 +266,7 @@ h3{
 .img-project-skills{
     display: flex;
     flex-direction: row;
-    gap:1rem;   
+    gap:0.5rem;   
 }
 
 .project-title{
