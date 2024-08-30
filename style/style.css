@@ -96,6 +96,14 @@ nav{
     gap: 2rem;
 }
 
+.container-text{
+    padding-right: 1rem;
+}
+
+.align-text{
+    text-align: justify;
+}
+
 
 
 #typing{
