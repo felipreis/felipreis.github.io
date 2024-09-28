@@ -86,3 +86,13 @@ const swiper = new Swiper('.slider-wrapper', {
         }
     }
   });
+
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Mensagem enviada com sucesso!');
+
+  });
+
+  document.getElementsByClassName('btn-primary').addEventListener('click', function() {
+    this.classList.add('clicked');  // Adiciona a classe 'clicked' ao botão após o clique
+});
