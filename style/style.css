@@ -56,13 +56,12 @@ a{
     align-items: center;
     gap:2rem;
     list-style: none;
+    margin: auto 0;
 }
 
 nav{
     max-width: 1120px;
     background-color:#000000;
-    margin: 4rem;
-    
 }
 
 .menu-item{
@@ -79,7 +78,7 @@ nav{
 
 .about-me{
     max-width: 1200px;
-    height: 90vh;
+    height: 80vh;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -172,6 +171,10 @@ transition: width 1s ease;
     border: #FFFFFF solid 1px;
 }
 
+.resume-download-img{
+    margin: auto 0;
+}
+
 
 h3{
     font-weight: 500;
@@ -188,9 +191,12 @@ h3{
 }
 
 .img-profile{
-    border: #FFFFFF solid 3px;
+    border: #312d2d solid 3px;
     border-radius: 10rem;
     animation: oscilacao 3s ease-in-out infinite;
+
+    /* para imagem nova*/
+    width: 45vh;
 }
 
 @keyframes oscilacao {
