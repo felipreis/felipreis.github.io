@@ -1,6 +1,7 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Michroma&display=swap");
+   /* url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Michroma&display=swap");
+        url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap'*/
 *{
     margin: 0;
     padding: 0;
@@ -218,7 +219,7 @@ h3{
     gap:4rem;
 
     padding:0rem 0rem;
-    margin: auto;
+    margin:0;
 
     background-color: #000000;
 
@@ -540,4 +541,129 @@ footer{
     background-color: #2E2E2E;
     color: #FFFFFF;
     border: #FFFFFF solid 1px;
+}
+
+/* div novas */
+
+.projects-section {
+  overflow: hidden;
+  padding-bottom: 60px;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  transition: transform 0.5s ease;
+}
+
+.project-card {
+  min-width: 400px;
+  background: #111;
+  border-radius: 20px;
+  overflow: hidden;
+  color: white;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+.video-container video {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 20px;
+}
+
+.tags span {
+  background: #222;
+  padding: 5px 10px;
+  margin-right: 5px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+
+/*teste*/
+
+.projects-section {
+    width: 100%;
+    padding: 0 80px;
+    overflow: visible;
+}
+
+
+/* trilho */
+.carousel-wrapper {
+
+}
+
+
+
+/* card */
+.project-card {
+    width: auto;
+  height: auto;
+  min-width: 400px;
+  background: #111;
+  border-radius: 20px;
+  color: white;
+    transition: all 0.4s ease;
+  transform: scale(0.8);
+  opacity: 0.5;
+  filter: blur(2px);
+
+  
+}
+
+.swiper-slide-active {
+  transform: scale(1);
+  opacity: 1;
+  z-index: 2;
+  filter: blur(0);
+}
+
+.swiper-slide-active .project-card {
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+}
+
+/* slides ao lado */
+.swiper-slide-next,
+.swiper-slide-prev {
+  transform: scale(0.9);
+  opacity: 0.7;
+  z-index: 1;
+}
+
+.projects-pagination {
+  position: relative;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center; /* 👈 centraliza */
+}
+
+/* vídeo */
+.video-container video {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.projects-pagination .swiper-pagination-bullet {
+  background: #888;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.projects-pagination .swiper-pagination-bullet-active {
+  background: #fff;
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.projects-next::after,
+.projects-prev::after {
+  color: white; /* 👈 cor da seta */
+  font-size: 20px; /* opcional */
 }

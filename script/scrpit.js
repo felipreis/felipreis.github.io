@@ -93,6 +93,39 @@ const swiper = new Swiper('.slider-wrapper', {
 
   });
 
-  document.getElementsByClassName('btn-primary').addEventListener('click', function() {
-    this.classList.add('clicked');  // Adiciona a classe 'clicked' ao botão após o clique
+    const buttons = document.getElementsByClassName('btn-primary');
+
+    Array.from(buttons).forEach(btn => {
+    btn.addEventListener('click', function() {
+        this.classList.add('clicked');
+    });
+    });
+
+// carrosel
+const swiperProjects = new Swiper(".projectsSwiper", {
+  loop: true,
+  centeredSlides: true,
+  slidesPerView: 1,
+  spaceBetween: 40,
+  grabCursor: true,
+
+  breakpoints: {
+    768: { slidesPerView: 1 },
+    1024: { slidesPerView: 2 }
+  },
+
+  pagination: {
+    el: '.projects-pagination',
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: '.projects-next',
+    prevEl: '.projects-prev',
+  },
+
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false
+  }
 });
