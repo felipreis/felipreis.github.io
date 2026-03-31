@@ -129,3 +129,17 @@ const swiperProjects = new Swiper(".projectsSwiper", {
     disableOnInteraction: false
   }
 });
+
+
+//background animation
+
+VANTA.WAVES({
+  el: "#background",
+  color: 0x111111,
+  backgroundColor: 0x000000, 
+  waveHeight: 20,
+  waveSpeed: 1.2,
+  points: 10,
+  maxDistance: 20,
+  spacing: 15
+});

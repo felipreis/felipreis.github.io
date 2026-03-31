@@ -667,3 +667,94 @@ footer{
   color: white; /* 👈 cor da seta */
   font-size: 20px; /* opcional */
 }
+
+
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+section {
+  background: transparent;
+}
+
+/*
+.projects,
+.skills,
+.about-me {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+}
+*/
+
+.projects {
+  background: transparent !important;
+}
+
+#top-contato .container {
+  background: transparent !important;
+}
+
+#top-contato {
+  background: transparent !important;
+}
+
+#top-contato .card {
+  background: rgba(0, 0, 0, 0.6) !important;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  color: white;
+}
+
+#top-contato label {
+  color: rgba(27, 27, 27, 0.6);
+}
+
+.menu-bar {
+  position: fixed; /* 👈 importante pra efeito fixo */
+  top: 0;
+  width: 100%;
+
+  background: rgba(0, 0, 0, 0.4); /* 👈 transparência */
+  backdrop-filter: blur(10px);    /* 👈 efeito vidro */
+  -webkit-backdrop-filter: blur(10px); /* safari */
+
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+
+  z-index: 1000;
+}
+
+.menu-item-container {
+  background: transparent !important;
+}
+
+.menu-item {
+  background: transparent;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.menu-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+.menu-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+.menu-bar,
+.menu-bar nav,
+.menu-bar ul,
+.menu-bar li {
+  background: transparent !important;
+}

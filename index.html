@@ -9,13 +9,17 @@
     <link rel="stylesheet" href = "style/media.css" >
     <!--swipper-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <script src="./script/scrpit.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script src="./script/contact.js" defer></script>
 </head>
 <body>
-
+    <div id="background"></div>
     <header id = "top-sobremim" class = "menu-bar">
         <nav >
             <ul class = "menu-item-container">
@@ -27,377 +31,376 @@
             </ul>
         </nav>
     </header>
-
-    <main>
-        <h2 class = "title-container">sobre mim</h2>
-        <section class = "about-me">
-            <div class="oscilar">
-                <img class= "img-profile" src = "img/1774664536831.jfif" alt="felipe img">
-            </div>
-            <header class = "aboutme-text">
-                <div>
-                    <h3 id = "typing">bem vindo! eu sou</h3>
-                    <h2 class = "title">Felipe Reis</h2>
-                </div>
-                <div class = "align-text container-text">
-                    <p class = "txt-aboutme"> <b>estudante de Análise e Desenvolvimento de Sistemas</b> no quinto semestre, com uma formação diversificada, incluindo experiência como cadete de cavalaria na AMAN. Tenho um gosto por música, skate, corrida, leitura, artes e fotografia <a href="https://felipreis.github.io/photo-site/" target="_blank"><b>(Aqui estão algumas fotos)</b></a>, e busco unir criatividade e rigor técnico em meu trabalho. Comunicativo e colaborativo, estou sempre em busca de novas oportunidades para aplicar e expandir meus conhecimentos na tecnologia. </p>
-                </div>
-                <h3>Experiência</h3>
-                <ul>
-                    <li class = "graduation">Estagiário Desenvolvimento - Agência Kife</li>
-                    <li class = "graduation">Desenvolvedor Front-End Freelancer</li>
-                    <li class = "graduation">Cadete - Academia Militar das Agulhas Negras</li>
-                </ul>
-                <a href="./assets/Felipe_Reis_Daniel_Backend.pdf" download>
-                    <button class = "resume-download">
-                        <img class = "resume-download-img" src = "https://icongr.am/clarity/download.svg?size=25&color=currentColor" alt = "download-logo">
-                        <p>resume</p>
-                    </button>
-                </a>
-            </header>
-        </section>
-
-        <section id = "top-projects" class = "projects">
-            <h2  class = "title-container">projetos</h2>
-            <div class="projects-section swiper projectsSwiper">
-
-                <div class="carousel-wrapper swiper-wrapper">
-                    
-                        <div class="project-card swiper-slide">
-                            <div class="video-container">
-                                <video autoplay muted loop>
-                                <source src="video/projeto1.mp4" type="video/mp4">
-                                </video>
-                            </div>
-
-                            <div class="project-content">
-                                <h2>MatchSports</h2>
-                                <p>
-                                Plataforma de criação de partidas esportivas com integração backend em Node.js,
-                                autenticação JWT e gestão de usuários.
-                                </p>
-
-                                <div class="tags">
-                                <span>Node.js</span>
-                                <span>React Native</span>
-                                <span>PostgreSQL</span>
-                                </div>
-
-                                <a href="#" target="_blank">Ver projeto</a>
-                            </div>
+        <main>
+            
+                <h2 class = "title-container">sobre mim</h2>
+                <section class = "about-me">
+                    <div class="oscilar">
+                        <img class= "img-profile" src = "img/1774664536831.jfif" alt="felipe img">
+                    </div>
+                    <header class = "aboutme-text">
+                        <div>
+                            <h3 id = "typing">bem vindo! eu sou</h3>
+                            <h2 class = "title">Felipe Reis</h2>
                         </div>
-
-                        <div class="project-card swiper-slide">
-                            <div class="video-container">
-                                <video autoplay muted loop>
-                                <source src="video/projeto1.mp4" type="video/mp4">
-                                </video>
-                            </div>
-
-                            <div class="project-content">
-                                <h2>MatchSports</h2>
-                                <p>
-                                Plataforma de criação de partidas esportivas com integração backend em Node.js,
-                                autenticação JWT e gestão de usuários.
-                                </p>
-
-                                <div class="tags">
-                                <span>Node.js</span>
-                                <span>React Native</span>
-                                <span>PostgreSQL</span>
-                                </div>
-
-                                <a href="#" target="_blank">Ver projeto</a>
-                            </div>
+                        <div class = "align-text container-text">
+                            <p class = "txt-aboutme"> <b>estudante de Análise e Desenvolvimento de Sistemas</b> no quinto semestre, com uma formação diversificada, incluindo experiência como cadete de cavalaria na AMAN. Tenho um gosto por música, skate, corrida, leitura, artes e fotografia <a href="https://felipreis.github.io/photo-site/" target="_blank"><b>(Aqui estão algumas fotos)</b></a>, e busco unir criatividade e rigor técnico em meu trabalho. Comunicativo e colaborativo, estou sempre em busca de novas oportunidades para aplicar e expandir meus conhecimentos na tecnologia. </p>
                         </div>
+                        <h3>Experiência</h3>
+                        <ul>
+                            <li class = "graduation">Estagiário Desenvolvimento - Agência Kife</li>
+                            <li class = "graduation">Desenvolvedor Front-End Freelancer</li>
+                            <li class = "graduation">Cadete - Academia Militar das Agulhas Negras</li>
+                        </ul>
+                        <a href="./assets/Felipe_Reis_Daniel_Backend.pdf" download>
+                            <button class = "resume-download">
+                                <img class = "resume-download-img" src = "https://icongr.am/clarity/download.svg?size=25&color=currentColor" alt = "download-logo">
+                                <p>resume</p>
+                            </button>
+                        </a>
+                    </header>
+                </section>
 
-                        <div class="project-card swiper-slide">
-                            <div class="video-container">
-                                <video autoplay muted loop>
-                                <source src="video/projeto1.mp4" type="video/mp4">
-                                </video>
-                            </div>
+                <section id = "top-projects" class = "projects">
+                    <h2  class = "title-container">projetos</h2>
+                    <div class="projects-section swiper projectsSwiper">
 
-                            <div class="project-content">
-                                <h2>MatchSports</h2>
-                                <p>
-                                Plataforma de criação de partidas esportivas com integração backend em Node.js,
-                                autenticação JWT e gestão de usuários.
-                                </p>
+                        <div class="carousel-wrapper swiper-wrapper">
+                            
+                                <div class="project-card swiper-slide">
+                                    <div class="video-container">
+                                        <video autoplay muted loop>
+                                        <source src="video/projeto1.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
 
-                                <div class="tags">
-                                <span>Node.js</span>
-                                <span>React Native</span>
-                                <span>PostgreSQL</span>
+                                    <div class="project-content">
+                                        <h2>MatchSports</h2>
+                                        <p>
+                                        Plataforma de criação de partidas esportivas com integração backend em Node.js,
+                                        autenticação JWT e gestão de usuários.
+                                        </p>
+
+                                        <div class="tags">
+                                        <span>Node.js</span>
+                                        <span>React Native</span>
+                                        <span>PostgreSQL</span>
+                                        </div>
+
+                                        <a href="#" target="_blank">Ver projeto</a>
+                                    </div>
                                 </div>
 
-                                <a href="#" target="_blank">Ver projeto</a>
-                            </div>
-                        </div>
+                                <div class="project-card swiper-slide">
+                                    <div class="video-container">
+                                        <video autoplay muted loop>
+                                        <source src="video/projeto1.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
 
+                                    <div class="project-content">
+                                        <h2>MatchSports</h2>
+                                        <p>
+                                        Plataforma de criação de partidas esportivas com integração backend em Node.js,
+                                        autenticação JWT e gestão de usuários.
+                                        </p>
 
-                        <div class="project-card swiper-slide">
-                            <div class="video-container">
-                                <video autoplay muted loop>
-                                <source src="video/projeto1.mp4" type="video/mp4">
-                                </video>
-                            </div>
+                                        <div class="tags">
+                                        <span>Node.js</span>
+                                        <span>React Native</span>
+                                        <span>PostgreSQL</span>
+                                        </div>
 
-                            <div class="project-content">
-                                <h2>MatchSports</h2>
-                                <p>
-                                Plataforma de criação de partidas esportivas com integração backend em Node.js,
-                                autenticação JWT e gestão de usuários.
-                                </p>
-
-                                <div class="tags">
-                                <span>Node.js</span>
-                                <span>React Native</span>
-                                <span>PostgreSQL</span>
+                                        <a href="#" target="_blank">Ver projeto</a>
+                                    </div>
                                 </div>
 
-                                <a href="#" target="_blank">Ver projeto</a>
-                            </div>
-                        </div>
+                                <div class="project-card swiper-slide">
+                                    <div class="video-container">
+                                        <video autoplay muted loop>
+                                        <source src="video/projeto1.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
 
-                        <div class="project-card swiper-slide">
-                            <div class="video-container">
-                                <video autoplay muted loop>
-                                <source src="video/projeto1.mp4" type="video/mp4">
-                                </video>
-                            </div>
+                                    <div class="project-content">
+                                        <h2>MatchSports</h2>
+                                        <p>
+                                        Plataforma de criação de partidas esportivas com integração backend em Node.js,
+                                        autenticação JWT e gestão de usuários.
+                                        </p>
 
-                            <div class="project-content">
-                                <h2>MatchSports 2 </h2>
-                                <p>
-                                Plataforma de criação de partidas esportivas com integração backend em Node.js,
-                                autenticação JWT e gestão de usuários.
-                                </p>
+                                        <div class="tags">
+                                        <span>Node.js</span>
+                                        <span>React Native</span>
+                                        <span>PostgreSQL</span>
+                                        </div>
 
-                                <div class="tags">
-                                <span>Node.js</span>
-                                <span>React Native</span>
-                                <span>PostgreSQL</span>
+                                        <a href="#" target="_blank">Ver projeto</a>
+                                    </div>
                                 </div>
 
-                                <a href="#" target="_blank">Ver projeto</a>
-                            </div>
-                        </div>
 
-                        <div class="project-card swiper-slide">
-                            <div class="video-container">
-                                <video autoplay muted loop>
-                                <source src="video/projeto1.mp4" type="video/mp4">
-                                </video>
-                            </div>
+                                <div class="project-card swiper-slide">
+                                    <div class="video-container">
+                                        <video autoplay muted loop>
+                                        <source src="video/projeto1.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
 
-                            <div class="project-content">
-                                <h2>MatchSports 3</h2>
-                                <p>
-                                Plataforma de criação de partidas esportivas com integração backend em Node.js,
-                                autenticação JWT e gestão de usuários.
-                                </p>
+                                    <div class="project-content">
+                                        <h2>MatchSports</h2>
+                                        <p>
+                                        Plataforma de criação de partidas esportivas com integração backend em Node.js,
+                                        autenticação JWT e gestão de usuários.
+                                        </p>
 
-                                <div class="tags">
-                                    <span>Node.js</span>
-                                    <span>React Native</span>
-                                    <span>PostgreSQL</span>
+                                        <div class="tags">
+                                        <span>Node.js</span>
+                                        <span>React Native</span>
+                                        <span>PostgreSQL</span>
+                                        </div>
+
+                                        <a href="#" target="_blank">Ver projeto</a>
+                                    </div>
                                 </div>
 
-                                <a href="#" target="_blank">Ver projeto</a>
-                            </div>
+                                <div class="project-card swiper-slide">
+                                    <div class="video-container">
+                                        <video autoplay muted loop>
+                                        <source src="video/projeto1.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
 
+                                    <div class="project-content">
+                                        <h2>MatchSports 2 </h2>
+                                        <p>
+                                        Plataforma de criação de partidas esportivas com integração backend em Node.js,
+                                        autenticação JWT e gestão de usuários.
+                                        </p>
+
+                                        <div class="tags">
+                                        <span>Node.js</span>
+                                        <span>React Native</span>
+                                        <span>PostgreSQL</span>
+                                        </div>
+
+                                        <a href="#" target="_blank">Ver projeto</a>
+                                    </div>
+                                </div>
+
+                                <div class="project-card swiper-slide">
+                                    <div class="video-container">
+                                        <video autoplay muted loop>
+                                        <source src="video/projeto1.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+
+                                    <div class="project-content">
+                                        <h2>MatchSports 3</h2>
+                                        <p>
+                                        Plataforma de criação de partidas esportivas com integração backend em Node.js,
+                                        autenticação JWT e gestão de usuários.
+                                        </p>
+
+                                        <div class="tags">
+                                            <span>Node.js</span>
+                                            <span>React Native</span>
+                                            <span>PostgreSQL</span>
+                                        </div>
+
+                                        <a href="#" target="_blank">Ver projeto</a>
+                                    </div>
+
+                                    
+                                </div>
                             
                         </div>
-                    
+
+                        <div class="projects-pagination"></div>
+
+                        <div class="projects-next swiper-button-next"></div>
+                        <div class="projects-prev swiper-button-prev"></div>
+
+                    </div>
+                </section>
+
+                <section id = "top-tecnologias" class = "skills">
+                    <div class = "container-tecnologias">
+                        <h2 class = "title-container">tecnologias</h2>
+                        <div id = "top-certificados" class = "skills-logo">
+                            <div class = "icon-container">
+                                <img class = "img-tec" src = "https://icongr.am/devicon/java-plain.svg?size=148&color=currentColor" alt="java logo">
+                                <div class="caption">Java</div>
+                            </div>
+                            <div class = "icon-container">
+                                <img class = "img-tec" src = "./img/icons/spring-boot-icon_250.png" alt="spring logo">
+                                <div class="caption">Springboot</div>
+                            </div>
+                            <div class = "icon-container">
+                                <img class = "img-tec" src = "https://icongr.am/devicon/javascript-plain.svg?size=148&color=currentColor" alt="js logo">
+                                <div class="caption">Javascript</div>
+                            </div>
+                            <div class = "icon-container">
+                                <img class = "img-tec" src = "https://icongr.am/devicon/html5-plain-wordmark.svg?size=148&color=currentColor" alt="html logo">
+                                <div class="caption">html</div>
+                            </div>
+                            <div class = "icon-container">
+                                <img class = "img-tec" src = "https://icongr.am/devicon/css3-plain-wordmark.svg?size=148&color=currentColor" alt="css logo">
+                                <div class="caption">css</div>
+                            </div>
+                            <div class = "icon-container">
+                                <img class = "img-tec" src = "https://icongr.am/devicon/github-original-wordmark.svg?size=148&color=currentColor" alt="github logo">
+                                <div class="caption">github</div>
+                            </div>
+                            <div class = "icon-container">
+                                <img class = "img-tec" src = "https://icongr.am/devicon/git-plain-wordmark.svg?size=148&color=currentColor" alt="git logo">
+                                <div class="caption">git</div>
+                            </div>
+                            <div class = "icon-container">
+                                <img class = "img-tec" src = "https://icongr.am/devicon/postgresql-plain.svg?size=148&color=currentColor" alt="postgre logo">
+                                <div class="caption">postgre</div>
+                            </div>
+                            <div class = "icon-container">
+                                <img class = "img-tec" src = "./img/icons/Figma_black.png" alt="figma logo">
+                                <div class="caption">figma</div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class = "container-tecnologias">
+                        <h2  class = "title-container">certificados</h2>
+                        <!--div swipper-->
+                        <div class = "container swiper">
+                            <!--div swipper-->
+                            <div class = "slider-wrapper">
+                                <section class = "certifications-div swiper-wrapper">
+                                    <article class = "certifications swiper-slide" onclick="window.open('https://www.dio.me/certificate/I0EX8YDG/share', '_blank');">
+                                        <img class = "certifications-img" src = "img/certificados/backend java-santander bootcamp.webp" alt = "bootcamp santander">
+                                        <div class = "head-project">
+                                            <hr class = "appointer">
+                                            <h3 id = "certification-name" class = "project-title">santander java backend </h3>
+                                        </div>
+                                    </article>
+
+                                    <article class = "certifications swiper-slide" onclick="window.open('https://www.dio.me/certificate/VM2PBSEU/share', '_blank');">
+                                        <img class = "certifications-img" src="./img/certificados/bootcamp java-ia.webp" alt="java ia">
+                                        <div class = "head-project">
+                                            <hr class = "appointer">
+                                            <h3 id = "certification-name" class = "project-title">desenvolvimento java com ia </h3>
+                                        </div>
+                                    </article>
+
+                                    <article class = "certifications swiper-slide" onclick="window.open('https://www.dio.me/certificate/NCHFKAPQ/share', '_blank');">
+                                        <img class = "certifications-img" src="./img/certificados/javadeveloper.webp" alt="java ia">
+                                        <div class = "head-project">
+                                            <hr class = "appointer">
+                                            <h3 id = "certification-name" class = "project-title">formação java developer</h3>
+                                        </div>
+                                    </article>
+
+                                    <article class = "certifications swiper-slide" onclick="window.open('https://appmlearn.s3.amazonaws.com/production/users/certificates/65a7d6f7b7a7c8b0dc087f88/git-e-github-do-basico-ao-avancado-felipe-reis-daniel-65db95e9270d6869e20fc708.jpg', '_blank');">
+                                        <img class = "certifications-img" src="./img/certificados/git-github.jpg" alt="java ia">
+                                        <div class = "head-project">
+                                            <hr class = "appointer">
+                                            <h3 id = "certification-name" class = "project-title">git e github básico ao avançado</h3>
+                                        </div>
+                                    </article>
+
+                                    <article class = "certifications swiper-slide" onclick="window.open('https://appmlearn.s3.amazonaws.com/production/users/certificates/65a7d6f7b7a7c8b0dc087f88/javascript-do-basico-ao-avancado-felipe-reis-daniel-65d267284911964b5e032ee9.jpg', '_blank');">
+                                        <img class = "certifications-img" src="./img/certificados/javascript.jpeg" alt="java ia">
+                                        <div class = "head-project">
+                                            <hr class = "appointer">
+                                            <h3 id = "certification-name" class = "project-title">javascript do básico ao avançado</h3>
+                                        </div>
+                                    </article>
+                                </section>
+
+                                <div class="swiper-pagination"></div>
+
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class = "github">
+                    <h2 class = "title-container">github</h2>
+                    <div class = "profile-github">
+                        <div class = "informations">
+                                <img src="https://github-readme-stats.vercel.app/api?username=FELIPREIS&theme=transparent&bg_color=000&border_color=#2E2E2E&show_icons=true&icon_color=#4e4e4e&title_color=#2E2E2E&text_color=#4e4e4e" alt = "github status">
+                                <img src = "https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=FELIPREIS&bg_color=000&border_color=#4e4e4e&title_color=#4e4e4e&text_color=#4e4e4e" alt = "lenguages">
+                        </div>
+                    </div>
+                </section>
+             
+        </main>
+        <footer id = "top-contato">
+            <section class="container py-5">
+                <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <h2 class="text-center mb-4 ">Entre em Contato</h2>
+                    <div class="card shadow-sm border-0">
+                    <div class="card-body p-4">
+                        <form id="contactForm">
+                        <div class="form-floating mb-3">
+                            <input name="user_name" type="text" class="form-control" id="name" placeholder="Nome" required>
+                            <label for="name">Nome</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input name="user_email" type="email" class="form-control" id="email" placeholder="Email" required>
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input name="user_phone" type="tel" class="form-control" id="phone" placeholder="Telefone">
+                            <label for="phone">Telefone</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <textarea name="message" class="form-control" placeholder="Escreva sua mensagem aqui" id="message" style="height: 150px" required></textarea>
+                            <label for="message">Mensagem</label>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg">Enviar Mensagem</button>
+                        </div>
+                        </form>
+                    </div>
+                    </div>
                 </div>
-
-                <div class="projects-pagination"></div>
-
-                <div class="projects-next swiper-button-next"></div>
-                <div class="projects-prev swiper-button-prev"></div>
-
-            </div>
-        </section>
-
-        <section id = "top-tecnologias" class = "skills">
-            <div class = "container-tecnologias">
-                <h2 class = "title-container">tecnologias</h2>
-                <div id = "top-certificados" class = "skills-logo">
-                    <div class = "icon-container">
-                        <img class = "img-tec" src = "https://icongr.am/devicon/java-plain.svg?size=148&color=currentColor" alt="java logo">
-                        <div class="caption">Java</div>
-                    </div>
-                    <div class = "icon-container">
-                        <img class = "img-tec" src = "./img/icons/spring-boot-icon_250.png" alt="spring logo">
-                        <div class="caption">Springboot</div>
-                    </div>
-                    <div class = "icon-container">
-                        <img class = "img-tec" src = "https://icongr.am/devicon/javascript-plain.svg?size=148&color=currentColor" alt="js logo">
-                        <div class="caption">Javascript</div>
-                    </div>
-                    <div class = "icon-container">
-                        <img class = "img-tec" src = "https://icongr.am/devicon/html5-plain-wordmark.svg?size=148&color=currentColor" alt="html logo">
-                        <div class="caption">html</div>
-                    </div>
-                    <div class = "icon-container">
-                        <img class = "img-tec" src = "https://icongr.am/devicon/css3-plain-wordmark.svg?size=148&color=currentColor" alt="css logo">
-                        <div class="caption">css</div>
-                    </div>
-                    <div class = "icon-container">
-                        <img class = "img-tec" src = "https://icongr.am/devicon/github-original-wordmark.svg?size=148&color=currentColor" alt="github logo">
-                        <div class="caption">github</div>
-                    </div>
-                    <div class = "icon-container">
-                        <img class = "img-tec" src = "https://icongr.am/devicon/git-plain-wordmark.svg?size=148&color=currentColor" alt="git logo">
-                        <div class="caption">git</div>
-                    </div>
-                    <div class = "icon-container">
-                        <img class = "img-tec" src = "https://icongr.am/devicon/postgresql-plain.svg?size=148&color=currentColor" alt="postgre logo">
-                        <div class="caption">postgre</div>
-                    </div>
-                    <div class = "icon-container">
-                        <img class = "img-tec" src = "./img/icons/Figma_black.png" alt="figma logo">
-                        <div class="caption">figma</div>
-                     </div>
-
                 </div>
-            </div>
-            <div class = "container-tecnologias">
-                <h2  class = "title-container">certificados</h2>
-                <!--div swipper-->
-                <div class = "container swiper">
-                    <!--div swipper-->
-                    <div class = "slider-wrapper">
-                        <section class = "certifications-div swiper-wrapper">
-                            <article class = "certifications swiper-slide" onclick="window.open('https://www.dio.me/certificate/I0EX8YDG/share', '_blank');">
-                                <img class = "certifications-img" src = "img/certificados/backend java-santander bootcamp.webp" alt = "bootcamp santander">
-                                <div class = "head-project">
-                                    <hr class = "appointer">
-                                    <h3 id = "certification-name" class = "project-title">santander java backend </h3>
-                                </div>
-                            </article>
-
-                            <article class = "certifications swiper-slide" onclick="window.open('https://www.dio.me/certificate/VM2PBSEU/share', '_blank');">
-                                <img class = "certifications-img" src="./img/certificados/bootcamp java-ia.webp" alt="java ia">
-                                <div class = "head-project">
-                                    <hr class = "appointer">
-                                    <h3 id = "certification-name" class = "project-title">desenvolvimento java com ia </h3>
-                                </div>
-                            </article>
-
-                            <article class = "certifications swiper-slide" onclick="window.open('https://www.dio.me/certificate/NCHFKAPQ/share', '_blank');">
-                                <img class = "certifications-img" src="./img/certificados/javadeveloper.webp" alt="java ia">
-                                <div class = "head-project">
-                                    <hr class = "appointer">
-                                    <h3 id = "certification-name" class = "project-title">formação java developer</h3>
-                                </div>
-                            </article>
-
-                            <article class = "certifications swiper-slide" onclick="window.open('https://appmlearn.s3.amazonaws.com/production/users/certificates/65a7d6f7b7a7c8b0dc087f88/git-e-github-do-basico-ao-avancado-felipe-reis-daniel-65db95e9270d6869e20fc708.jpg', '_blank');">
-                                <img class = "certifications-img" src="./img/certificados/git-github.jpg" alt="java ia">
-                                <div class = "head-project">
-                                    <hr class = "appointer">
-                                    <h3 id = "certification-name" class = "project-title">git e github básico ao avançado</h3>
-                                </div>
-                            </article>
-
-                            <article class = "certifications swiper-slide" onclick="window.open('https://appmlearn.s3.amazonaws.com/production/users/certificates/65a7d6f7b7a7c8b0dc087f88/javascript-do-basico-ao-avancado-felipe-reis-daniel-65d267284911964b5e032ee9.jpg', '_blank');">
-                                <img class = "certifications-img" src="./img/certificados/javascript.jpeg" alt="java ia">
-                                <div class = "head-project">
-                                    <hr class = "appointer">
-                                    <h3 id = "certification-name" class = "project-title">javascript do básico ao avançado</h3>
-                                </div>
-                            </article>
-                        </section>
-
-                        <div class="swiper-pagination"></div>
-
-                        <!-- If we need navigation buttons -->
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                        
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <section class = "github">
-            <h2 class = "title-container">github</h2>
-            <div class = "profile-github">
-                <div class = "informations">
-                        <img src="https://github-readme-stats.vercel.app/api?username=FELIPREIS&theme=transparent&bg_color=000&border_color=#2E2E2E&show_icons=true&icon_color=#4e4e4e&title_color=#2E2E2E&text_color=#4e4e4e" alt = "github status">
-                        <img src = "https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=FELIPREIS&bg_color=000&border_color=#4e4e4e&title_color=#4e4e4e&text_color=#4e4e4e" alt = "lenguages">
-                </div>
-            </div>
-        </section>
-
-        
-    </main>
-    <footer id = "top-contato">
-        <section class="container py-5">
-            <div class="row justify-content-center">
-              <div class="col-md-8">
-                <h2 class="text-center mb-4 ">Entre em Contato</h2>
-                <div class="card shadow-sm border-0">
-                  <div class="card-body p-4">
-                    <form id="contactForm">
-                      <div class="form-floating mb-3">
-                        <input name="user_name" type="text" class="form-control" id="name" placeholder="Nome" required>
-                        <label for="name">Nome</label>
-                      </div>
-                      <div class="form-floating mb-3">
-                        <input name="user_email" type="email" class="form-control" id="email" placeholder="Email" required>
-                        <label for="email">Email</label>
-                      </div>
-                      <div class="form-floating mb-3">
-                        <input name="user_phone" type="tel" class="form-control" id="phone" placeholder="Telefone">
-                        <label for="phone">Telefone</label>
-                      </div>
-                      <div class="form-floating mb-3">
-                        <textarea name="message" class="form-control" placeholder="Escreva sua mensagem aqui" id="message" style="height: 150px" required></textarea>
-                        <label for="message">Mensagem</label>
-                      </div>
-                      <div class="d-grid">
-                        <button type="submit" class="btn btn-primary btn-lg">Enviar Mensagem</button>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <h2  class = "title-container contact-title"> Contato</h2>
-          <section class = "contact">
-            <div class = "contac-informations">
-                <a href="mailto:felipreisdaniel@gmail.com">
-                    <div class = "contact-section">
-                        <img src = "https://icongr.am/entypo/mail.svg?size=25&color=6e6e6e" alt = "emaillogo">
-                        <h3>felipreisdaniel@gmail.com</h3>
-                    </div>
-                </a>
-                <a href="https://wa.me/5512978508909?text=Olá%Felipe!%20" target="_blank">
-                    <div class = "contact-section">
-                        <img src = "https://icongr.am/entypo/phone.svg?size=25&color=6e6e6e">
-                        <h3>WhatsApp</h3>
-                    </div>
-                </a>
-            </div>
-            <div class = "social-medias">
-                <h3>redes socias</h3>
-                <div class = "social-media-icons">
-                    <a href="https://www.linkedin.com/in/felipreisd/" target="_blank">
-                        <img src = "https://icongr.am/entypo/linkedin-with-circle.svg?size=40&color=6e6e6e" alt="linkedin"></a>
-                    <a href="https://www.instagram.com/_felipreis/" target="_blank">
-                        <img src = "https://icongr.am/entypo/instagram-with-circle.svg?size=40&color=6e6e6e" alt="instagram"></a>
-                    <a href = "https://github.com/felipreis" target="_blank">
-                        <img src = "https://icongr.am/entypo/github.svg?size=40&color=6e6e6e" alt = "github-logo">
+            </section>
+            <h2  class = "title-container contact-title"> Contato</h2>
+            <section class = "contact">
+                <div class = "contac-informations">
+                    <a href="mailto:felipreisdaniel@gmail.com">
+                        <div class = "contact-section">
+                            <img src = "https://icongr.am/entypo/mail.svg?size=25&color=6e6e6e" alt = "emaillogo">
+                            <h3>felipreisdaniel@gmail.com</h3>
+                        </div>
+                    </a>
+                    <a href="https://wa.me/5512978508909?text=Olá%Felipe!%20" target="_blank">
+                        <div class = "contact-section">
+                            <img src = "https://icongr.am/entypo/phone.svg?size=25&color=6e6e6e">
+                            <h3>WhatsApp</h3>
+                        </div>
                     </a>
                 </div>
-            </div>
-        </section>
-    </footer>
+                <div class = "social-medias">
+                    <h3>redes socias</h3>
+                    <div class = "social-media-icons">
+                        <a href="https://www.linkedin.com/in/felipreisd/" target="_blank">
+                            <img src = "https://icongr.am/entypo/linkedin-with-circle.svg?size=40&color=6e6e6e" alt="linkedin"></a>
+                        <a href="https://www.instagram.com/_felipreis/" target="_blank">
+                            <img src = "https://icongr.am/entypo/instagram-with-circle.svg?size=40&color=6e6e6e" alt="instagram"></a>
+                        <a href = "https://github.com/felipreis" target="_blank">
+                            <img src = "https://icongr.am/entypo/github.svg?size=40&color=6e6e6e" alt = "github-logo">
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </footer>
 </body>
 </html>
 
