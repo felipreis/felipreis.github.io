@@ -125,7 +125,7 @@ const swiperProjects = new Swiper(".projectsSwiper", {
   },
 
   autoplay: {
-    delay: 3000,
+    delay: 8000,
     disableOnInteraction: false
   }
 });
