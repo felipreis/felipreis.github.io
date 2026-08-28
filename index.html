@@ -72,26 +72,47 @@
                             
                                 <div class="project-card swiper-slide">
                                     <div class="video-container">
-                                        <video autoplay muted loop>
-                                        <source src="video/login.mp4" type="video/mp4">
-                                        </video>
+                                        <img src="/img/Projetos/leadhub.png" alt="img setup homelab" style="width: 100%; object-fit: cover;">   
                                     </div>
 
                                     <div class="project-content">
-                                        <h2>Sistema de Autenticação Completo (Login + Recuperação de Senha)</h2>
+                                        <h2>LeadHub — Plataforma de Atribuição de Conversão</h2>
                                         <p>
-                                        Sistema com cadastro, login, geração de token JWT e fluxo de recuperação de senha com envio de código por e-mail.
+                                         Plataforma que fecha o ciclo entre mídia paga (Meta Ads) e receita real, recebendo leads via webhook, rastreando a jornada de cada um (JourneyEvent) e enviando o evento de conversão de volta para a Meta Conversions API com hash de dados para deduplicação. Arquitetura multi-tenant, já validada com um cliente real de marketing digital.
                                         </p>
 
                                         <div class="tags">
                                         <span>Node.js + Express</span>
-                                        <span>JWT</span>
-                                        <span>Nodemailer</span>
                                         <span>PostgreSQL</span>
-                                        <span>Bcrypt</span>
+                                        <span>Sequelize</span>
+                                        <span>Meta Conversions API</span>
+                                        <span>Google Sheets API</span>
                                         </div>
 
-                                        <a href="https://www.linkedin.com/posts/felipreisd_falaaa-redeee-no-ano-passado-junto-com-activity-7310645673211629568-VljV?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEAgeLYBLUPUVIMTTOEQj3PmXlEdB0kCDuw" target="_blank">Ver projeto</a>
+                                        <a href="https://github.com/felipreis/DataFlow" target="_blank">Ver projeto</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="project-card swiper-slide">
+                                    <div class="video-container">
+                                        <img src="/img/Projetos/gerenciador de tarefas.png" alt="img setup homelab" style="width: 100%; object-fit: cover;">   
+                                    </div>
+
+                                    <div class="project-content">
+                                        <h2>Task Manager API</h2>
+                                        <p>
+                                         API REST completa para gerenciamento de tarefas e projetos, com fluxo de autenticação JWT, hash de senha com bcrypt e documentação via Swagger. Construída em arquitetura MVC (Routes → Controller → Service → Repository → Model) e publicada em produção no meu próprio homelab, rodando em containers Docker orquestrados via docker-compose, com frontend React separado consumindo a API.
+                                        </p>
+
+                                        <div class="tags">
+                                        <span>Node.js + Express</span>
+                                        <span>PostgreSQL</span>
+                                        <span>Sequelize</span>
+                                        <span>JWT</span>
+                                        <span>Docker</span>
+                                        </div>
+
+                                        <a href="https://github.com/felipreis/gerenciador-tarefas" target="_blank">Ver projeto</a>
                                     </div>
                                 </div>
 
@@ -115,32 +136,6 @@
                                         </div>
 
                                         <a href="#" target="_blank">Ver projeto</a>
-                                    </div>
-                                </div>
-
-                                <div class="project-card swiper-slide">
-                                    <div class="video-container">
-                                        <video autoplay muted loop>
-                                        <source src="video/projeto1.mp4" type="video/mp4">
-                                        </video>
-                                    </div>
-
-                                    <div class="project-content">
-                                        <h2>Sistema de busca de serviços próximos (Google Business API) - TanaMão</h2>
-                                        <p>
-                                        Projeto acadêmico desenvolvido no segundo semestre do curso de Análise e Desenvolvimento de Sistemas. A aplicação permite ao usuário buscar estabelecimentos próximos (como farmácias e serviços) com base na sua localização, consumindo a API do Google Places para retornar resultados relevantes.
-                                        </p>
-
-                                        <div class="tags">
-                                        <span>Java</span>
-                                        <span>Spring Boot</span>
-                                        <span>API Google Places</span>
-                                        <span>HTML</span>
-                                        <span>CSS</span>
-                                        <span>JavaScript</span>
-                                        </div>
-
-                                        <a href="https://github.com/felipreis/app-ads" target="_blank">Ver projeto</a>
                                     </div>
                                 </div>
 
